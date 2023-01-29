@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated landing page</title>
+<style>
+    body{
+        font-family: arial, san-serif;
+        background-color: #f2f2f2;
+    }
+    .container{
+        max-width:800px;
+        margin: 0 auto;
+        text-align:center;
+        padding: 50px 0;
+    }
+    h1{
+        font-size:48px;
+        margin-bottom: 20px;
+
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+.btn {
+    background-color: blue;
+    color: white;
+    padding:  15px 30px;
+    border-radius: 4px;
+    text-decoration: none ;
+    font-size: 10px;
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1> Wlevcome to my Animated landing page</h1>
+        <p> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aut animi recusandae veritatis quod cum quia, libero atque et neque fugiat doloremque non amet facilis enim quas obcaecati voluptate maxime voluptates rem sunt error eaque. Repudiandae nemo maiores ullam laudantium facere fugit, perspiciatis atque voluptatum provident tempore eligendi sequi iusto ipsa harum laboriosam error reiciendis sit aperiam. Aliquid laborum, aspernatur fuga beatae commodi numquam quis dolorem! Earum dignissimos iure obcaecati fugiat unde laboriosam odio reiciendis ipsam, similique magni atque tenetur explicabo aliquid hic beatae autem laborum quas necessitatibus error illo nesciunt? A sit autem fugiat alias recusandae aliquid harum minus.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates alias similique saepe incidunt ex qui quis corporis laudantium, quisquam magni ipsa quibusdam veniam, harum sint!</p>
+   <a href="#" class="btn" id="cta"> LEARN MORE</a>
+            <button> Learn More</button>
+    </div>
+  <script>
+    const cta =document.getElementById("cta");
+    cta.addEventListener("click", function(){
+        const message= document.createElement("p");
+        message.innerHTML=" Thank you for clicking the button";
+        message.style.fontSize = "24px";
+        message.style.marginTop =" 20px"
+        document.querySelector(" .container")
+    });
+  </script>  
+</body>
+</html>
